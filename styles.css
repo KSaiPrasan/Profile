@@ -180,8 +180,8 @@ img {
 @media screen and (min-width: 540px) and (max-width: 780px){
   .header {
     background-image: url('360_F_531798391_XFz7gyPmDRTAfiEE5sRjFu5NpKrJt4rC.jpg');
-    height: 740px;
-    width: 510px
+    height: auto;
+    width: auto;
     /* Additional styles for large screens */
   }
 }
