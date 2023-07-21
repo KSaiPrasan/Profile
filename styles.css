@@ -1,0 +1,187 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #51575a;
+  color: #fff;
+  padding: 1.1rem;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #24c3cb;
+}
+
+main {
+  padding-top: 80px; /* Ensure content starts below the fixed header */
+}
+
+.section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #010204;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(360_F_531798391_XFz7gyPmDRTAfiEE5sRjFu5NpKrJt4rC.jpg);
+  background-size: cover;
+  color: #000000;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  margin: 10px;
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.project-item {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-item p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.social-media a {
+  color: #333;
+  font-size: 3rem;
+  margin: 0 0.5rem;
+  transition: color 0.2s;
+}
+
+.social-media a:hover {
+  color: #1923e2;
+}
+img {
+  max-width: 150px;
+  height:150px;
+}
+/* Set up CSS for default background image */
+.header {
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Adjust the height as needed */
+  width: auto;
+}
+.heads {
+  background-image: url('360_F_531798391_XFz7gyPmDRTAfiEE5sRjFu5NpKrJt4rC.jpg');
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Adjust the height as needed */
+  width: auto;
+}
+
+/* Set up CSS for background image on screens with a minimum width of 769px */
+@media screen and (min-width: 540px) and (max-width: 780px){
+  .header {
+    background-image: url('360_F_531798391_XFz7gyPmDRTAfiEE5sRjFu5NpKrJt4rC.jpg');
+    height: 740px;
+    width: 510px
+    /* Additional styles for large screens */
+  }
+}
