@@ -155,7 +155,7 @@ main {
 }
 
 .social-media a:hover {
-  color: #1923e2;
+  color: #626468;
 }
 img {
   max-width: 150px;
@@ -172,16 +172,15 @@ img {
   background-image: url('360_F_531798391_XFz7gyPmDRTAfiEE5sRjFu5NpKrJt4rC.jpg');
   background-size: cover;
   background-position: center;
-  height: auto; /* Adjust the height as needed */
+  height: auto; 
   width: auto;
 }
 
-/* Set up CSS for background image on screens with a minimum width of 769px */
-@media screen and (min-width: 540px) and (max-width: 780px){
+
+@media screen {
   .header {
-    background-image: url('360_F_531798391_XFz7gyPmDRTAfiEE5sRjFu5NpKrJt4rC.jpg');
     height: auto;
     width: auto;
-    /* Additional styles for large screens */
+   
   }
 }
