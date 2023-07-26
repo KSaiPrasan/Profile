@@ -105,7 +105,7 @@ main {
 .skills-list li {
   margin: 10px;
   padding: 15px 25px;
-  background-color: #007bff;
+  background-color: #38054b;
   color: #fff;
   font-weight: 500;
   border-radius: 5px;
@@ -113,7 +113,7 @@ main {
 
 .project-item {
   background-color: #f8f8f8;
-  border: 1px solid #ddd;
+  border: 1px solid #9b66a6;
   border-radius: 5px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -181,6 +181,5 @@ img {
   .header {
     height: auto;
     width: auto;
-   
   }
 }
