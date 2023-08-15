@@ -48,7 +48,7 @@ nav a:hover {
 }
 
 main {
-  padding-top: 80px; /* Ensure content starts below the fixed header */
+  padding-top: 80px; 
 }
 
 .section {
@@ -161,11 +161,11 @@ img {
   max-width: 150px;
   height:150px;
 }
-/* Set up CSS for default background image */
+
 .header {
   background-size: cover;
   background-position: center;
-  height: auto; /* Adjust the height as needed */
+  height: auto; 
   width: auto;
 }
 .heads {
@@ -176,10 +176,22 @@ img {
   width: auto;
 }
 
-
-@media screen {
-  .header {
-    height: auto;
-    width: auto;
-  }
+.images {
+  border: #000000;
 }
+
+.magnify-img {
+  max-width: 100%;
+  vertical-align: middle;
+  cursor: zoom-in;
+}
+.border-img {
+  display: inline-block;
+  padding: 10px;
+  position: relative; 
+}
+.border-img:hover .magnify-img {
+  transform: scale(2); /* Increase the image size on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
