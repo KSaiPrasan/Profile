@@ -74,7 +74,7 @@ main {
 
 .hero {
   height: 100vh;
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -130,7 +130,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .hero h1 {
-    font-size: 3rem;
+    font-size: 3rem; 
   }
 
   .subtitle {
@@ -167,11 +167,12 @@ img {
   width: auto;
 }
 .heads {
-  background-image: url('360_F_531798391_XFz7gyPmDRTAfiEE5sRjFu5NpKrJt4rC.jpg');
+  
   background-size: cover;
   background-position: center;
   height: auto; 
   width: auto;
+  background-image: url('360_F_531798391_XFz7gyPmDRTAfiEE5sRjFu5NpKrJt4rC.jpg');
 }
 
 .images {
@@ -194,4 +195,11 @@ img {
 }
 .head-bgcontainer {
   background-color: #51575a;
+}
+.imgs {
+  width: 70px;
+  height: 70px;
+}
+.navbar-expand-lg {
+  height: 50px;
 }
