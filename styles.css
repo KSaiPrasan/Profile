@@ -200,6 +200,22 @@ img {
   width: 70px;
   height: 70px;
 }
-.navbar-expand-lg {
-  height: 50px;
+/* Style for the header logo */
+.navbar-brand img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  /* Add any additional styling you want */
+}
+
+/* Style for the hamburger icon */
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  border-radius: 4px;
+  height: 3px;
+  width: 25px;
 }
