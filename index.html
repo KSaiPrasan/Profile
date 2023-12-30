@@ -122,8 +122,30 @@
               <a href="https://www.facebook.com/sai.prasan.10" target="Instagram"><i class="fab fa-facebook" style="color:#1877F2;"></i></a>
       
             </div>
+            <div id="visitor-count">
+              <br>
+              <p>Total Visitors: <span id="count">0</span></p>
+            </div>
     </section>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Retrieve the count from local storage or set it to 0
+      var count = parseInt(localStorage.getItem('visitorCount')) || 0;
+
+      // Update the count display
+      document.getElementById('count').innerText = count;
+
+      // Increment the count
+      count++;
+
+      // Update the count display
+      document.getElementById('count').innerText = count;
+
+      // Save the updated count to local storage
+      localStorage.setItem('visitorCount', count.toString());
+    });
+  </script>
 </body>
 </html>
