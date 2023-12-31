@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="icon" href="Screenshot_2023-08-28_at_3.36.25_PM-removebg.png" type="image/x-icon">
-  <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
   <style>
   </style>
 </head>
@@ -123,26 +122,8 @@
               <a href="https://www.facebook.com/sai.prasan.10" target="Instagram"><i class="fab fa-facebook" style="color:#1877F2;"></i></a>
       
             </div>
-            <div id="visitor-count">
-              <br>
-              <p>Total Visitors: <span id="count">0</span></p>
-            </div>
     </section>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Fetch the count from the server-side script
-      fetch('counter.php')
-        .then(response => response.text())
-        .then(count => {
-          // Update the count display
-          document.getElementById('count').innerText = count;
-        })
-        .catch(error => {
-          console.error('Error fetching count:', error);
-        });
-    });
-  </script>
 </body>
 </html>
