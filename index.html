@@ -132,17 +132,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Retrieve the count from local storage
-      let count = parseInt(localStorage.getItem('visitorCount')) || 0;
-
-      // Increment the count
-      count++;
-
-      // Update the count display
-      document.getElementById('count').innerText = count;
-
-      // Save the updated count to local storage
-      localStorage.setItem('visitorCount', count.toString());
+      // Fetch the count from the server-side script
+      fetch('counter.php')
+        .then(response => response.text())
+        .then(count => {
+          // Update the count display
+          document.getElementById('count').innerText = count;
+        })
+        .catch(error => {
+          console.error('Error fetching count:', error);
+        });
     });
   </script>
 </body>
