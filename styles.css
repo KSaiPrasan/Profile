@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   margin: 0;
   padding: 0;
@@ -190,7 +190,7 @@ img {
   position: relative; 
 }
 .border-img:hover .magnify-img {
-  transform: scale(2); /* Increase the image size on hover */
+  transform: scale(2); 
   transition: transform 0.3s ease-in-out;
 }
 .head-bgcontainer {
@@ -199,4 +199,13 @@ img {
 .imgs {
   width: 70px;
   height: 70px;
+}
+.navbar {
+  color:#38054b !important;
+}
+
+.navbar-nav a:hover {
+  color: rgb(26, 165, 208);
+  background-color: #f8f9fa; 
+  border-radius: 5px; 
 }
