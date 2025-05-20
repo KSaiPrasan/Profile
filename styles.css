@@ -209,3 +209,7 @@ img {
   background-color: #f8f9fa; 
   border-radius: 5px; 
 }
+.highlight {
+  color: yellow; /* Choose any color you like */
+  font-weight: bold;
+}
